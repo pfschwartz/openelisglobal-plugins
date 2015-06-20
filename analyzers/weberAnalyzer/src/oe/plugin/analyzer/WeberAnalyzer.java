@@ -31,8 +31,8 @@ public class WeberAnalyzer implements AnalyzerImporterPlugin {
 
     public boolean connect(){
         List<PluginAnalyzerService.TestMapping> nameMappinng = new ArrayList<PluginAnalyzerService.TestMapping>();
-        nameMappinng.add(new PluginAnalyzerService.TestMapping("CD4_PER", "CD4 Compte en %"));
-        nameMappinng.add(new PluginAnalyzerService.TestMapping("CD3_PER", "CD4 Compte Absolu"));
+        nameMappinng.add(new PluginAnalyzerService.TestMapping("CD4_PER", "Configuree"));
+        nameMappinng.add(new PluginAnalyzerService.TestMapping("CD3_PER", "Configuree"));
         getInstance().addAnalyzerDatabaseParts("WeberAnalyzer", "Plugin for weber analyzer",nameMappinng);
         getInstance().registerAnalyzer(this);
         return true;
